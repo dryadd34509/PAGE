@@ -105,8 +105,6 @@
 	c6=0;
 
 	for (i = 1; i < 11; i++) {
-	
-	if (id=="weapon") {
 		if (getRandomInt(1,6)==1){
 		c1 += 1
 		 text += "第"+ i +"抽:火" + "<br>";
@@ -131,11 +129,10 @@
 				c6 += 1
 		text += "第"+ i +"抽:闇" + "<br>";
 		}
-	
-      
-	} else {
-		text += getRandomInt(1,6) + "<br>";
-	}  
+		else
+		{
+			text += "第"+ i +"抽:??" + "<br>";
+		}
     }
 	
 	x.innerHTML = text;
